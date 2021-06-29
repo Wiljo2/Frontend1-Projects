@@ -1,0 +1,96 @@
+*{
+    margin:0 ;
+    padding:0 ;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+
+    background-color: black;
+}
+.header__logo{
+    padding: 10px 20px;
+}
+
+.header__nav{
+    width:50%
+}
+
+.header__nav--list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__nav--item{
+    margin:20px;
+    text-decoration: none;
+    color:white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: Roboto;
+}
+
+
+
+main{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 20px;
+}
+.main__container{
+    width: 50%;
+    justify-content: center;
+    text-align:center;
+    margin:5px;
+}
+
+.container1{
+    background-image: url("img/delivery.jpg") ;
+    min-height: 350px;
+    background-size: cover; 
+
+}
+
+.container__description{
+    display:flex;
+    width:100%
+}
+
+
+
+footer{
+    display: flex;
+    background-color:black;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.footer__nav{
+    display:flex;
+    flex-direction: column;
+    margin:2px;
+
+}
+
+.footer__nav--item{
+    margin:10px;
+    text-decoration: none;
+    color:white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    
+}
