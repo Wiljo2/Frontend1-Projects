@@ -10,7 +10,10 @@ header {
 .header__logo{
     background-color:#E6E6E6;
     padding: 21px 0 ;
+}
 
+.header__logo img{
+    width: 15%;
 }
 
 .header__title{
@@ -27,7 +30,9 @@ header {
     line-height: 60px;
 }
 
-/* main */
+/*-------------
+    main 
+-------------*/
 
 main{
     padding: 104px 174px 176px  225px;
