@@ -8,6 +8,7 @@ body {
     font-family: 'Roboto', sans-serif;
     position: relative;
     height: 100%;
+    font-size: 18px;
 }
 
 .header__top{
@@ -49,15 +50,15 @@ body {
     width:100%;
     display:flex;
     justify-content:center;
-    padding:60px 200px 110px;
+    padding:30px 150px 110px;
 }
 
-.login{
+.register{
     width: 45%;
     height:100%
 }
 
-.login__title{
+.register__title{
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -65,13 +66,13 @@ body {
     margin: 20px 0px 25px;
 }
 
-.login__form{
+.register__form{
     display:flex;
     flex-direction:column;
     margin: 10px 0;
 }
 
-.login__form--input{
+.register__form--input{
     margin-bottom: 10px;
     border: 1.53407px solid #000000;
     box-sizing: border-box;
@@ -79,18 +80,35 @@ body {
     padding:10px;
 }
 
-.login__form--input::placeholder{
+.register__form--input::placeholder{
     color:black;
 }
 
-.login__buttons{
+.register__buttonArea{
     display: flex;
     flex-direction: column;
     margin-top: 20px;
     text-align: center;
 }
+.register__buttonArea--buttons{
+    display:flex;
+    justify-content:space-between;
+}
+.register__buttonArea--reset{
+    width: 48%;
+    background: #888888;
+    border-radius: 23.011px;
+    border: 0;
+    padding:10px;
+    color:white;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    font-size:1.0rem;
+    margin-bottom: 20px;
+}
 
-.login__buttons--button{
+.register__buttonArea--register{
+    width: 48%;
     background: #1CD1B0;
     border-radius: 23.011px;
     border: 0;
@@ -102,18 +120,16 @@ body {
     margin-bottom: 20px;
 }
 
-.login__buttons--button:hover{
+
+.register__buttons--button:hover{
     background: #0b5043;
     color:white;
 }
 
-.login__buttons--link{
+.register__buttonArea--link{
     margin-bottom: 10px;
 }
-.login__buttons--black{
-    color: #000000;
-    text-decoration: none;
-}
+
 
 footer{
     position: absolute;
@@ -126,16 +142,31 @@ footer{
     font-size: 16px;
 }
 
- @media (min-width: 650px) {
-    .main__carrusel {
-        display: grid ;
-        grid-template-columns: 1fr 1fr ;
+ @media (max-width: 480px) {
+    .main{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        padding:20px 10px 110px;
+    }
+    .register{
+        width: 70%;
+        height:100%
+    }
+    .register__buttonArea--buttons{
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
     }
 }
 
 @media (max-width: 850px) {
     .header__bottom {
         justify-content:center;
+    }
+    .register{
+        width: 65%;
+        height:100%
     }
 
     .main{

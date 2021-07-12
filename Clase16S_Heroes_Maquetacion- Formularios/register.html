@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="/styles/login.css">
+    <link rel="stylesheet" href="/styles/register.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,22 +28,32 @@
         </div>
         <nav class="header__bottom">
             <a class ="header__bottom--item" href="./contact.html">Contacto</a>
-            <a class ="header__bottom--item" href="./register.html">Register</a>
+            <a class ="header__bottom--item" href="./login.html">Login</a>
             <a class ="header__bottom--item" href="./index.html">Inicio</a>
         </nav>
     </header>
     <main class ="main">
-        <section class="login">
-            <h1 class="login__title">Login</h1>
-            
-            <div class="login__form">
-                <input class="login__form--input" type="email" name="email" id="email" placeholder="Usuario">
-                <input class="login__form--input" type="password" name="password" id="password" placeholder="Contraseña">
+        <section class="register">
+            <h1 class="register__title">Registro</h1>
+
+            <div class="register__form">
+                <input class="register__form--input" type="text" name="name" id="name" placeholder="Nombre y Apellido" required >
+                <input class="register__form--input" type="email" name="email" id="email" placeholder="Correo Electrónico" required >
+                <input class="register__form--input" type="password" name="password" id="password" placeholder="Contraseña" required >
+                <select class="register__form--input" > 
+                    <option hidden selected>País</option>   
+                    <option>Colombia</option>      
+                    <option>Argentina</option>      
+                    <option>Bolivia</option>       
+                </select>
             </div>
-            <div class="login__buttons">
-                <input class="login__buttons--button" type="button" value="Entrar">
-                <div class="login__buttons--register">
-                    <a class="login__buttons--link" href="/register.html">¿No tienes una cuenta?</a> <span class="login__buttons--black">Registrarme</span> 
+            <div class="register__buttonArea">
+                <div class="register__buttonArea--buttons">
+                    <input class="register__buttonArea--reset" type="button" value="Resetear">
+                    <input class="register__buttonArea--register" type="button" value="Registrar">
+                </div>
+                <div class="register__buttonArea--login">
+                    <a class="register__buttonArea--link" href="/login.html">¿Ya tienes una cuenta?</a> <span class="register__buttons--black">Inicia Sesión</span> 
                 </div>
             </div>
 
