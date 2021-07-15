@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/add.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Heroes</title>
+</head>
+<body>
+    <header>
+        <div class="header__top">
+            <p>20% de descuento en todos los productos!</p> 
+        </div>
+        <div class="header__title">
+            <img src="/img/logo.png" alt="">
+            <h1>Nombre Tienda</h1>
+        </div>
+    </header>
+    <main>
+        <form class="form">
+            <h2 class="form__title">Añadí tu super</h2>
+            <p class="form__description">Agregá tu personaje favorito completando las opciones.</p>
+            <div class="form__sections">
+                <div class="form__left">
+                    <div class="form__field">
+                        <label class="form__label" for="name" required>*Nombre</label>
+                        <input class="form__input" type="text" id="name" name="name">
+                    </div>
+                    <div class="form__field">
+                        <label class="form__label" for="name">Fecha</label>
+                        <input class="form__input" type="date" id="date" name="date">
+                    </div>
+                    
+                    <textarea class="form__input form__textarea" name="description" id="description" cols="30" rows="12" placeholder="Descripción"></textarea>
+                </div>
+                <!-- 
+                ---------Form Division------------------------ 
+                -->                
+                <div class="form__right">
+                    <div class="form__field">
+                        <label class="form__label" for="especie">*Especie</label>
+                        <select class="form__input form__select" id="especie" name="especie">
+                            <option value="" hidden>Seleccione una opción</option>
+                            <option value="">Unknow</option>
+                            <option value="atlantean">Animal</option>
+                            <option value="centaurian">Mutants</option>
+                            <option value="deviant">God</option>
+                            <option value="human">Human</option>
+                            <option value="kronan">Robot</option>
+                        </select>
+                    </div>
+                    <div class="form__field">
+                        <label for="photo" class="form__label" >Agregar Foto</label>
+                        <input type="file" name="photo" id="photo" accept="image/png, image/jpeg" class="form__photo">
+                    </div>
+                    <fieldset class="form__field form__fieldset">  
+                            <legend class="form__label">Poderes</legend>
+                            <div class="check-label">
+                                <input type="checkbox" class="form__checkbox" id="volar">
+                                <label for="volar" class="form__label form__label--inline">Volar</label>
+                            </div>
+                            <div class="check-label">
+                                <input type="checkbox" class="form__checkbox" id="superInteligencia">
+                                <label for="superInteligencia" class="form__label form__label--inline">SuperInteligencia</label>
+                            </div>
+                            <div class="check-label">
+                                <input type="checkbox" class="form__checkbox" id ="RayoLaser">
+                                <label for="RayoLaser" class="form__label form__label--inline">Vista de rayo láser</label>
+                            </div>
+                            <div class="check-label">
+                                <input type="checkbox" class="form__checkbox" id = "BilleteraGorda">
+                                <label for="BilleteraGorda" class="form__label form__label--inline">Billetera gorda</label>
+                            </div>
+                    </fieldset>
+                    <hr>
+                    <fieldset class="form__field form__fieldset">
+                        <legend class="form__label">Tipo de personaje</legend>
+                        <div class="radio-label">
+                            <input type="radio" name="characterType" id="good">
+                            <label for="good">Héroe / Heroina</label>
+                        </div>
+                        <div class="radio-label">
+                            <input type="radio" name="characterType" id="bad">
+                            <label for="bad">Villano / Villana</label>
+                        </div>
+                        <div class="radio-label">
+                            <input type="radio" name="characterType" id="goodBad">
+                            <label for="goodBad">Antihéroe / Antiheroina </label>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <input class="form__submit--button" type="submit" value="Añadir">
+   
+        </form>
+    </main>
+    <footer>
+        Todos los derechos reservados a FRONT END 1
+    </footer>
+        
+    
+</body>
+</html>
