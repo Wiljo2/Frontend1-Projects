@@ -84,7 +84,7 @@ body {
     display: inline-block;
     width: 15px;
     height: 15px;
-    background-image: url('/img/paw-print-small.png');
+    background-image: url('img/paw-print-small.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -107,7 +107,7 @@ body {
 }
 
 .main-menu__item:hover .main-menu__icon {
-    background-image: url('/img/paw-print.png');
+    background-image: url('img/paw-print.png');
 }
 
 .banner{
@@ -116,7 +116,7 @@ body {
     height: 409px;
     width: 100%;
     padding: 0px 22px;
-    background-image: url(/img/baner.png);
+    background-image: url(img/baner.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
