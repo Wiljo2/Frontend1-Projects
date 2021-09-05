@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/*general styles*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+}
+
+.header,
+.main,
+.footer {
+  min-width: 320px;
+}
+
+/*se definen las variables */
+/* este sería un partial, importa el orden*/
+/*color:red for every font how has the class redColor */
+.redColor {
+  color: #D01418;
+}
+
+/* Header */
+.header {
+  display: flex;
+  background-color: #222222;
+  color: #FFFFFF;
+  justify-content: space-between;
+  padding: 25px 40px;
+  /* the ampersand == header in this case */
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.header__logo h2 {
+  font-size: 2.5rem;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.header__nav {
+  display: flex;
+  gap: 45px;
+}
+.header__nav--item {
+  text-decoration: none;
+  color: #FFFFFF;
+  position: relative;
+  padding: 10px 0;
+}
+.header__nav--item::before {
+  position: absolute;
+  content: "";
+  background: #D01418;
+  bottom: -5px;
+}
+.header__nav--item:hover::before {
+  width: 100%;
+  height: 5px;
+  animation: underline 0.5s;
+}
+
+/*------------
+               main 
+                   -------------- */
+/*banner*/
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 512px;
+  background-image: url("../img/fondoBanner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+  gap: 20px;
+}
+.banner__tittle {
+  font-size: 5rem;
+}
+.banner__button {
+  color: #FFFFFF;
+  background-color: #D01418;
+  border: 0;
+  border-radius: 5px;
+  font-size: 2.5rem;
+  padding: 15px 70px;
+  transition: all 0.5s;
+}
+.banner__button:hover {
+  transform: scale(1.1);
+}
+
+/*animations */
+@keyframes underline {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

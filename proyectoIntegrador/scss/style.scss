@@ -1,0 +1,101 @@
+@use "variables" as v; /*se definen las variables */
+
+@use "globals"; /* este sería un partial, importa el orden*/
+
+/*color:red for every font how has the class redColor */
+.redColor {
+  color: v.$red;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  background-color: v.$black-background;
+  color: v.$white;
+  justify-content: space-between;
+  padding: 25px 40px;
+
+  /* the ampersand == header in this case */
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+  &__nav {
+    display: flex;
+    gap: 45px;
+    &--item {
+      text-decoration: none;
+      color: v.$white;
+      position: relative;
+      padding: 10px 0;
+      &::before {
+        position: absolute;
+        content: "";
+        background: v.$red;
+        bottom: -5px;
+      }
+      &:hover::before {
+        width: 100%;
+        height: 5px;
+        animation: underline 0.5s;
+      }
+    }
+  }
+}
+
+/*------------
+               main 
+                   -------------- */
+
+/*banner*/
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 512px;
+  background-image: url("../img/fondoBanner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: v.$white;
+  gap: 20px;
+
+  &__tittle {
+    font-size: 5rem;
+  }
+
+  &__button {
+    color: v.$white;
+    background-color: v.$red;
+    border: 0;
+    border-radius: 5px;
+    font-size: 2.5rem;
+    padding: 15px 70px;
+    transition: all 0.5s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+/*animations */
+@keyframes underline {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
